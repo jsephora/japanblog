@@ -10,6 +10,9 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    // 'gatsby-remark-images',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -30,7 +33,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -54,14 +56,12 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: `${__dirname}/blog/assets`,
-      },
-    },
-    'gatsby-plugin-sharp',
-    `gatsby-remark-images`,
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'assets',
+    //     path: `${__dirname}/blog/assets`,
+    //   },
+    // },
   ],
 }
